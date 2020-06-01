@@ -1,0 +1,261 @@
+
+@font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Aleo Bold Italic'), local('Aleo-BoldItalic'),
+         url('../fonts/aleo-v3-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/aleo-v3-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'), local('PTSerif-Italic'),
+         url('../fonts/pt-serif-v11-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-serif-v11-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+*{padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    width: 940px;
+    margin: 0 auto;
+    background-color: white;
+}
+.nav{
+    width: 100%;
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    width: 484px;
+    list-style-type: none;
+}
+.nav-ul-li-a{
+    text-decoration: none;
+    font-size: 14px;
+line-height: 41px;
+color: #222222;
+font-family: "Montserrat";
+font-weight: 400;
+text-align: center;
+text-transform: uppercase;
+}
+.nav-ul-li-a:hover{
+    color: #fed136;
+    transition: 200ms;
+}
+.logo-a{
+    text-decoration: none;
+}
+.logo-p{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #fed136;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+    background-color: white;
+}
+.container-h2{
+    font-size: 40px;
+letter-spacing: -1px;
+line-height: 40px;
+color: #222222;
+font-family: "Montserrat";
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 24px;
+    
+}
+.container-p{
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+color: #777777;
+font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+text-align: center;
+margin-bottom: 50px;
+}
+.container-ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.container-ul-li{
+    position: relative;
+    width: 270px;
+    padding:120px 10px 120px 10px;
+}
+.container-ul-li::before{
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    display: block;
+    content: "";
+    background-position: center center ;
+    background-repeat:no-repeat ;
+   
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    border: 3px solid #fed136;
+}
+.first-icon::before{
+    background-image: url(../img/homework-07-1.png);
+}
+.second-icon::before{
+    background-image: url(../img/homework-07-2.png);
+}
+.third-icon::before{
+background-image: url(../img/homework-07-3.png);
+}
+.container-ul-li-h3{
+    text-align: center;
+    font-size: 18px;
+letter-spacing: 0px;
+color: #222222;
+font-family: "Montserrat";
+font-weight: 700;
+margin-bottom: 20px;
+}
+.container-ul-li-p{
+    text-align: center;
+    text-indent: 10px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+}
+.footer{
+    height: 100%;
+    width: 100%;
+    background-color: #222222;
+padding:106px 0px 60px 0px ;
+background-image: url(../img/homework-07-earth.png);
+background-position: right bottom 20px;
+background-repeat: no-repeat;
+}
+.footer-h2{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 40px;
+letter-spacing: -1px;
+color: #ffffff;
+font-family: "Montserrat";
+font-weight: 700;
+text-transform: uppercase;
+}
+.footer-p{
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 16px;
+color: #777777;
+font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+}
+.form{
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 116px;
+}
+.form-button{
+    display: block;
+ width: 240px;
+height: 65px;
+margin: 0 auto;
+border-radius: 3px;
+background-color: #fed136;
+font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.form-div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.form-left-div{
+    display: flex;
+    flex-direction: column;
+}
+.form-left-div-input{
+    padding:0 20px;
+    width: 415px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.form-right-div-textarea::placeholder , .form-left-div-input::placeholder{
+    font-size: 14px;
+letter-spacing: 0px;
+color: #bbbbbb;
+font-family: "Montserrat";
+font-weight: 700;
+text-transform: uppercase;
+}
+.form-left-div-input:not(:last-child){
+    margin-bottom: 30px;
+}
+.form-right-div-textarea{
+    padding:0 20px ;
+width: 415px;
+height: 209px;
+background-color: #ffffff;
+border: 1px solid #cccccc;
+resize: none;
+}
+.neccesary:required:focus:invalid{
+    outline: 3px solid red;
+}
+.neccesary:required:focus:valid:not(:placeholder-shown){
+    outline: 3px solid green;
+}
