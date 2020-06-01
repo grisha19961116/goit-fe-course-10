@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="../module-10/css/style.css" />
   </head>
   <body>
-    <header class="main-header">
+    <header class="container-for-bacground-header ">
+      <div class=" main-header">
       <nav class="main-header__nav">
         <a class="logotype " href="#"
           ><p class="logotype__text-setings">MoGo</p></a
@@ -45,16 +46,17 @@
         <button class="basket-cart basket-cart--margin-right-in-header">
           <img src="../module-10/img/bascet-for-your-shoping.svg" alt="basket">
         </button>
-        <a href="#" class="shoping-basket">
+        <a href="#" class="dundruff">
           <img src="../module-10/img/toll-for-search.svg" alt="dundruff">
         </a>
       </nav>
       <div class="main-header__content-under-menu">
         <h1 class="main-header__content-main-title">Creative Template</h1> 
-        <h2 class="main-header__conent-title">Welcome
+        <h2 class="main-header__content-title">Welcome
           to MoGo</h2>
         <button class="button-for-upload button-for-upload__button-header">Learn more</button>
       </div>
+    </div>
     </header>
     <main class="main-content">
       <section class="services">
@@ -124,20 +126,32 @@
         <ul class="team__list">
           <li class="team__list-item">
             <div class="team-tables">
-                <img
+              <picture>
+                <source media="(min-width: 1024px)" srcset="img/6-3.png 377w, img/6-3@2x.png 754w" >
+                <img src="img/6-3.png" sizes="377px" height="466" alt="shirt">
+              </picture>
+              <!-- <img  
+             srcset="img/6-3.png 377w,  
+             img/6-3@2x.png 754w" width="377"
+             height="466"
+             src="img/6-3.png" alt="shirt"
+             > -->
+                <!-- <img 
                   src="img/6-3.png"
                   alt="shirt"
                   width="377"
                   height="466"
                   class="team-tables__img"
-                />
+                  srcset="img/6-3.png 377w , img/6-3@2x.png 754w "
+                /> -->
               <div class="overlay">
                 <ul class="overlay__list">
                   <li class="overlay__list-item">
                     <a href="#" class="overlay__link">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
                         <path id="facebook" class="overlay__svg" d="M22.879 0.245c0 1.817 0 5.072 0 5.072s-3.738-0.373-4.674 1.060c-0.512 0.783-0.208 3.077-0.254 4.724 1.632 0 3.327 0 4.959 0-0.418 1.925-0.719 3.23-1.028 4.896-1.412 0-3.958 0-3.958 0v15.759c0 0-4.673 0-6.87 0 0.001-4.858-0.001-10.526 0-15.697-1.067 0-1.856 0-2.923 0 0-1.817 0-3.14 0-4.958 1.035 0 1.855 0 2.891 0 0.148-3.626 0.203-7.217 2.005-9.046 2.023-2.057 3.954-1.809 9.852-1.809z"></path>
-                      </svg></a>
+                      </svg>
+                    </a>
                   </li>
                   <li class="overlay__list-item">
                     <a href="#" class="overlay__link">
@@ -163,8 +177,8 @@
                 </ul>
               </div>
             </div>
-            <h3 class="team-ul-li-h3">Matthew Dix</h3>
-            <p class="team-ul-li-p">Graphic Desig</p>
+            <h3 class="team-tables__title">Matthew Dix</h3>
+            <p class="team-tables__information">Graphic Desig</p>
           </li>
           <li class="team__list-item">
             <div class="team-tables">
@@ -207,8 +221,8 @@
               </ul>
             </div>
             </div>
-            <h3 class="team-ul-li-h3">Christopher Campbell</h3>
-            <p class="team-ul-li-p">Branding/UX desig</p>
+            <h3 class="team-tables__title">Christopher Campbell</h3>
+            <p class="team-tables__information">Branding/UX desig</p>
           </li>
           <li class="team__list-item">
             <div class="team-tables">
@@ -251,18 +265,18 @@
               </ul>
             </div>
             </div>
-            <h3 class="team-ul-li-h3">Michael Fertig</h3>
-            <p class="team-ul-li-p">Developer</p>
+            <h3 class="team-tables__title">Michael Fertig</h3>
+            <p class="team-tables__information">Developer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-p">
-        © 2016 MoGo free PSD template by <a href="#" class="footer-a">Laaqiq</a>
+      <p class="footer-description">
+        © 2016 MoGo free PSD template by <a href="#" class="footer-link">Laaqiq</a>
       </p>
-      <form action="#" class="footer-form">
-        <input type="text" class="footer-input" placeholder="Your Email..." />
+      <form action="#" class="form-type-email">
+        <input type="text" class="form-type-email__input" placeholder="Your Email..." />
         <button type="submit" class="button-for-upload button-for-upload__footer-button">
           subscribe
         </button>
