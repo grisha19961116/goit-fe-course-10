@@ -7,29 +7,20 @@ body {
   padding: 0;
 }
 .container-for-bacground-header{
-  position: relative;
-  top: 0;
-  right: 0;
-  background-image: linear-gradient(0deg, rgba(251, 227, 137, .5) 0%,  rgba(243, 138, 129, .5) 100%);
+  background-image: linear-gradient(to top , rgba(251, 227, 137, 0.95) ,  rgba(243, 138, 129, 0.95)), url('../img/eagl-hue.png') ; 
   display: block;
+  background-size: cover;
   width: 100%;
   height: auto;
-  background-repeat: no-repeat;
 }
-/* .container-for-bacgroud-header::after{
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-image: linear-gradient(0deg, rgba(251, 227, 137, .5) 0%,  rgba(243, 138, 129, .5) 100%);
- } */
+@media (min-resolution: 192dpi){
+  .container-for-bacground-header{
+    background-image: linear-gradient(to top , rgba(251, 227, 137, 0.95) ,  rgba(243, 138, 129, 0.95)), url('../img/eagl-hue@2x.png') ; 
+  }
+} 
 .main-header{
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   height: auto;
 }
 .main-header__nav {
@@ -90,7 +81,10 @@ body {
   text-align: center;
 }
 .basket-cart{
-  background-color: rgb(253, 179, 216);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(to bottom , rgba(251, 227, 137, 0.9) ,rgba(243, 138, 129, 0.9));
   cursor: pointer;
 }
 .basket-cart--margin-right-in-header{
@@ -103,13 +97,14 @@ body {
 .button-for-upload__button-header{
   display: block;
   margin: 0 auto;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   background-color: rgba(0,0,0,0);
 }
 .button-for-upload__footer-button {
   background-color: #95e1d3;
 }
 .button-for-upload{
+  cursor: pointer;
   width: 150px;
   height: 40px;
   font-size: 14px;
@@ -118,6 +113,9 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+}
+.button-for-upload:active{
+  border: 3px solid orange;
 }
 .main-header__content-under-menu{
   padding: 150px 0px 230px 0px;
@@ -341,7 +339,7 @@ body {
   margin-right: 1px;
 }
 
-.overlay:hover .ovelay__list-item:hover {
+.overlay:hover .overlay__list-item:hover {
   background-color:#f38181;
   width: 56px;
   height: 56px;
@@ -351,14 +349,14 @@ body {
 .overlay:hover .overlay__list-item:hover .overlay__svg{
   fill: white;
 }
-.overlay__link {
+.overlay__list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 56px;
   height: 56px;
   text-decoration: none;
-  background-color:rgba(252, 227, 138, 0.5);
+  background-color:rgba(252, 227, 138);
 }
 .overlay__svg{
   fill: #f38181;
