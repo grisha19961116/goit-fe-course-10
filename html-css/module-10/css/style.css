@@ -359,6 +359,9 @@ body {
   background-color:rgba(252, 227, 138);
 }
 .overlay__svg{
+  display: block;
+  width: 32px;
+  height: 32px;
   fill: #f38181;
 }
 .team-tables__title {
@@ -413,6 +416,7 @@ body {
   display: flex;
 }
 .form-type-email__input {
+  padding-left: 10px;
   width: 230px;
   height: 40px;
   background-color: #ffffff;
@@ -423,4 +427,7 @@ body {
   font-family: "Roboto";
   font-weight: 300;
   font-style: italic;
+}
+.form-type-email__input::placeholder{
+  padding-left: 10px;
 }
