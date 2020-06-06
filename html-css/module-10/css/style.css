@@ -242,19 +242,17 @@ body {
       flex-wrap: wrap;
 }
 
-.services__list-item {
+.services-ul__list-item {
   position: relative;
+  display: block;
   width: 300px;
   padding-left: 80px;
   list-style-type: none;
 }
-.services-cart{
-  width: 300px;
-}
-.services__list-item:nth-last-of-type(n + 3) {
+.services-ul__list-item:nth-last-of-type(n + 3) {
   margin-bottom: 50px;
 }
-.services__list-item::before {
+.services-ul__list-item::before {
   display: block;
   width: 32px;
   height: 32px;
@@ -263,31 +261,31 @@ body {
   top: 0;
   left: 20px;
 }
-.services-list__item-first:before {
+.services-ul__item-first:before {
   background-image: url(../img/alarm.svg);
 }
 
-.services-list__item-second:before {
+.services-ul__item-second:before {
   background-image: url(../img/line-graph.svg);
 }
 
-.services-list__item-third:before {
+.services-ul__item-third:before {
   background-image: url(../img/computer.svg);
 }
 
-.services-list__item-fourth:before {
+.services-ul__item-fourth:before {
   background-image: url(../img/book.svg);
 }
 
-.services-list__item-fifth::before {
+.services-ul__item-fifth::before {
   background-image: url(../img/home.svg);
 }
 
-.services-list__item-sixth::before {
+.services-ul__item-sixth::before {
   background-image: url(../img/iamage.svg);
 }
 
-.services-cart__text {
+.services-ul__text {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -295,7 +293,7 @@ body {
   font-weight: 400;
 }
 
-.services-cart__title {
+.services-ul__title {
   margin-bottom: 10px;
   font-size: 14px;
   color: #333333;
